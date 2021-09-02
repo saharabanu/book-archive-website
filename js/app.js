@@ -35,6 +35,7 @@ searchButton.addEventListener('click',function(){
 })
 // error arrow function  
 const showError=()=>{
+  errorType.style.display ='none';
  errorMessage.style.display = 'block'
  bookFoundNumbers.style.display ='none';
 }
