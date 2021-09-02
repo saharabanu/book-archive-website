@@ -9,18 +9,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body class="bg-gray">
-    <section class="container p-5">
+    <section class="container p-5 ">
         <h1 class=" text-success text-center">Search Your Favourite Book</h1>
         <!-- search div   -->
         <div class="input-group mb-3 w-50 mx-auto">
             <input id="search-input" type="text" class="form-control" placeholder="Search book's name" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
           </div>
+          <!-- error handling 1  -->
+          <div class="mx-auto ">
+            <h1 id="error" class="bg-danger text-center  p-3 fw-bolder">Please type any book name</h1>
+          <!-- error handling 2  -->
+          <h2 id="error-handle" class="bg-dark text-center text-white p-3"></h2>
+          </div>
+           <!-- search result found  -->
+           <h1 id="book-numbers" class="text-center p-3 bg-warning p-3 mb-5"></h1>
+
+          <!-- show all books div   -->
+          <div id="book-container" class="row row-cols-1 row-cols-md-3 g-4 ">
+          </div>
     </section>
    
-    <!-- bootstrap script   -->
+   <!-- -- bootstrap script  -- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <!-- js script   -->
+   <!-- js script     -->
     <script src="js/app.js"></script>
 </body>
 </html>
