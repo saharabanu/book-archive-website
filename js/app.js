@@ -12,11 +12,11 @@ errorType.style.display ='none';
 bookFoundNumbers.style.display ='none';
 
 searchButton.addEventListener('click',function(){
-  bookFoundNumbers.textContent='';
+  
      const  searchText=searchInput.value;
     //  input value clear 
      searchInput.value ='';
-    
+     bookFoundNumbers.textContent='';
     //  show data clear 
      bookContainer.textContent ='';
      if(searchText===''){
@@ -26,7 +26,7 @@ searchButton.addEventListener('click',function(){
      }
  else{
   errorMessage.style.display = 'none'
-  const url= `http://openlibrary.org/search.json?q=${searchText}`
+  const url= `https://openlibrary.org/search.json?q=${searchText}`
   fetch(url)
   .then(res=>res.json())
   .then(data=>showBooksData(data))
